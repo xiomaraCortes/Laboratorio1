@@ -1,0 +1,88 @@
+body{background: #eee url(http://subtlepatterns.com/patterns/sativa.png);}
+html,body{
+    position: relative;
+    height: 100%;
+}
+
+.Titulo{
+    text-align: center;
+    font-family: Comic Sans, Comic Sans MS, cursiva;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.Subtitulo{
+    text-align: center; 
+    font-family:Cancillería Zapf, cursiva;
+    color: rgba(0, 0, 0, 0.466);
+}
+
+.Imagenes{
+    border: 1px solid black;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.Imagenes:hover{
+    -webkit-box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
+}
+
+.Texto{
+    font-size: 25px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.Centro{
+    text-align: center;
+}
+
+
+.slider{
+    width: 30%;
+    margin:auto;
+     overflow: hidden;
+    border-radius: 25%;
+    cursor: pointer;
+    
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+    
+    
+}
+
+.slider li{
+    width: 100%;
+    list-style: none; 
+    
+}
+
+.slider img{
+    width:  100%;
+   
+}
+
+
+@keyframes cambio{
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+
+    75%{ margin-left: -300%;}
+    100%{ margin-left: -300%;}
+
+    
+}
+
+
